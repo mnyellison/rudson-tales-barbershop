@@ -6,9 +6,58 @@
     <title>Rudson Tales Barbearia</title>
     <meta name="description" content="Barbearia especializada em cortes e barba. Agende seu horário pelo WhatsApp." />
     <link rel="icon" href="src/assets/images/favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="src/css/output.css" />
   </head>
   <body>
+    <header class="border-off-white/10 fixed top-0 left-0 z-20 w-full border-b bg-black">
+      <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between p-4">
+        <a href="#home">
+          <img src="src/assets/icons/logo-barbershop.svg" class="h-9 w-auto md:h-10" alt="Rudson Tales Barbearia" />
+        </a>
+        <div class="flex space-x-3 md:order-2 md:space-x-0">
+          <!-- prettier-ignore -->
+          <a href="#contact" class="bg-gold hover:bg-gold-light focus:ring-gold/40 box-border rounded-md border border-transparent px-3 py-2 text-sm leading-5 font-medium text-black shadow-xs focus:ring-4 focus:outline-none">
+            Agendar <span class="hidden sm:inline">horário</span>
+          </a>
+          <button data-collapse-toggle="navbar-sticky" type="button" class="text-off-white hover:bg-black-soft focus:ring-off-white/40 inline-flex h-10 w-10 items-center justify-center rounded-md p-2 text-sm focus:ring-2 focus:outline-none md:hidden" aria-controls="navbar-sticky" aria-expanded="false">
+            <span class="sr-only">Abrir menu principal</span>
+            <svg class="h-6 w-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14" /></svg>
+          </button>
+        </div>
+        <nav class="hidden w-full items-center justify-between md:order-1 md:flex md:w-auto" id="navbar-sticky">
+          <ul class="border-off-white/10 bg-black-soft mt-4 flex flex-col rounded-md border p-4 font-medium md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-black md:p-0">
+            <li>
+              <!-- prettier-ignore -->
+              <a href="#home" class="text-off-white aria-[current=page]:bg-gold aria-[current=page]:text-black md:aria-[current=page]:bg-transparent md:aria-[current=page]:text-gold md:hover:text-gold block rounded-md px-3 py-2 md:p-0" aria-current="page">
+                Início
+              </a>
+            </li>
+            <li>
+              <!-- prettier-ignore -->
+              <a href="#about" class="text-off-white md:hover:text-gold block rounded-md px-3 py-2 hover:bg-black md:p-0 md:hover:bg-transparent">
+                Sobre
+              </a>
+            </li>
+            <li>
+              <!-- prettier-ignore -->
+              <a href="#services" class="text-off-white md:hover:text-gold block rounded-md px-3 py-2 hover:bg-black md:p-0 md:hover:bg-transparent">
+                Serviços
+              </a>
+            </li>
+            <li>
+              <!-- prettier-ignore -->
+              <a href="#contact" class="text-off-white md:hover:text-gold block rounded-md px-3 py-2 hover:bg-black md:p-0 md:hover:bg-transparent">
+                Contato
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
     <script src="src/js/main.js"></script>
   </body>
 </html>
